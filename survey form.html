@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="design.css">
+
+    <meta charset="utf-8">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form of Soft hub</h1>
+      <p id="description" class="description text-center">
+        For having a job in our company you should fill the form 
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>In which job you want to work with us?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your job</option>
+            <option value="software engineer">Software Engineer</option>
+            <option value="code writer">code writer</option>
+            <option value="Gaurd">Gaurd</option>
+            <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Gender</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Male"
+            type="radio"
+            class="input-radio"
+            checked/>Male</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="Female"
+            type="radio"
+            class="input-radio"/>Female</label
+        >
+      </div>
+  
+   
+  
+      <div class="form-group">
+        <p>
+          Why do you want to join with us?
+          
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="Because we are famous"
+            type="checkbox"
+            class="input-checkbox"
+          />Because we are famous</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="certificate from us"
+            type="checkbox"
+            class="input-checkbox"
+          />Because of getting a certificate from us</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Because of sallary"
+            type="checkbox"
+            class="input-checkbox"
+          />Because of sallary</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="other"
+            type="checkbox"
+            class="input-checkbox"
+          />other</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>Tell us a short story of your knowledge.</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+         
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
